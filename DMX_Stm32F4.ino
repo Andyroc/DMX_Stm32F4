@@ -10,23 +10,23 @@ byte dim = 0;
 
 void setup() {
 
-  OUT1 = 1; // OTPUT1 PIN (PA1)
-  OUT2 = 2; // OTPUT1 PIN (PA2)
-  OUT3 = 3; // OTPUT1 PIN (PA3)
-  OUT4 = 4; // OTPUT1 PIN (PA4)
-  OUT5 = 5; // OTPUT1 PIN (PA5)
-  OUT6 = 6; // OTPUT1 PIN (PA6)
-  OUT7 = 7; // OTPUT1 PIN (PA7)
-  OUT8 = 8; // OTPUT1 PIN (PA8)
+  OUT1 = 1; // OTPUT1 PIN (PС1)
+  OUT2 = 2; // OTPUT1 PIN (PС2)
+  OUT3 = 3; // OTPUT1 PIN (PС3)
+  OUT4 = 4; // OTPUT1 PIN (PС4)
+  OUT5 = 5; // OTPUT1 PIN (PС5)
+  OUT6 = 6; // OTPUT1 PIN (PС6)
+  OUT7 = 7; // OTPUT1 PIN (PС7)
+  OUT8 = 8; // OTPUT1 PIN (PС8)
 
-  pinMode(PA_1, OUTPUT);
-  pinMode(PA_2, OUTPUT);
-  pinMode(PA_3, OUTPUT);
-  pinMode(PA_4, OUTPUT);
-  pinMode(PA_5, OUTPUT);
-  pinMode(PA_6, OUTPUT);
-  pinMode(PA_7, OUTPUT);
-  pinMode(PA_8, OUTPUT);
+  pinMode(PС_1, OUTPUT);
+  pinMode(PС_2, OUTPUT);
+  pinMode(PС_3, OUTPUT);
+  pinMode(PС_4, OUTPUT);
+  pinMode(PС_5, OUTPUT);
+  pinMode(PС_6, OUTPUT);
+  pinMode(PС_7, OUTPUT);
+  pinMode(PС_8, OUTPUT);
 
   DMX_begin();
 }
