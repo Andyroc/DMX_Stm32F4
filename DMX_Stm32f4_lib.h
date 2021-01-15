@@ -24,7 +24,7 @@ int8_t OUT6 = -1;
 int8_t OUT7 = -1;
 int8_t OUT8 = -1;
 
-#define OUTPORT GPIOС // output port GPIOA, GPIOB, GPOC ....
+///#define OUTPORT GPIOС // output port GPIOA, GPIOB, GPOC ....
 
 void DMX_begin()
 {
