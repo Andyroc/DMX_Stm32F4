@@ -24,7 +24,7 @@ byte OUT6 = -1;
 byte OUT7 = -1;
 byte OUT8 = -1;
 
-#define OUTPORT GPIOC // output port GPIOA, GPIOB, GPOC ....
+#define OUTPORT GPIOA // output port GPIOA, GPIOB, GPOC ....
 
 void DMX_begin()
 {
