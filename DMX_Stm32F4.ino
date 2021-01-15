@@ -10,23 +10,22 @@ byte dim = 0;
 
 void setup() {
 
-  OUT1 = 1; // OTPUT1 PIN (PС1)
-  OUT2 = 2; // OTPUT1 PIN (PС2)
-  OUT3 = 3; // OTPUT1 PIN (PС3)
-  OUT4 = 4; // OTPUT1 PIN (PС4)
-  OUT5 = 5; // OTPUT1 PIN (PС5)
-  OUT6 = 6; // OTPUT1 PIN (PС6)
-  OUT7 = 7; // OTPUT1 PIN (PС7)
-  OUT8 = 8; // OTPUT1 PIN (PС8)
-
-  pinMode(PС_1, OUTPUT);
-  pinMode(PС_2, OUTPUT);
-  pinMode(PС_3, OUTPUT);
-  pinMode(PС_4, OUTPUT);
-  pinMode(PС_5, OUTPUT);
-  pinMode(PС_6, OUTPUT);
-  pinMode(PС_7, OUTPUT);
-  pinMode(PС_8, OUTPUT);
+  OUT1 = 1; // OTPUT1 PIN (PC1)
+  pinMode(PC_1, OUTPUT);  //OTPUT1 PIN MODE
+  OUT2 = 2; // OTPUT2 PIN (PC2)
+  pinMode(PC_2, OUTPUT);  //OTPUT2 PIN MODE
+  OUT3 = 3; // OTPUT3 PIN (PC3)
+  pinMode(PC_3, OUTPUT);  //OTPUT3 PIN MODE
+  OUT4 = 4; // OTPUT4 PIN (PC4)
+  pinMode(PC_4, OUTPUT);  //OTPUT4 PIN MODE
+  OUT5 = 5; // OTPUT5 PIN (PC5)
+  pinMode(PC_5, OUTPUT);  //OTPUT5 PIN MODE
+  OUT6 = 6; // OTPUT6 PIN (PC6)
+  pinMode(PC_6, OUTPUT);  //OTPUT6 PIN MODE
+  OUT7 = 7; // OTPUT7 PIN (PC7)
+  pinMode(PC_7, OUTPUT);  //OTPUT7 PIN MODE
+  OUT8 = 8; // OTPUT8 PIN (PC8)
+  pinMode(PC_8, OUTPUT);  //OTPUT8 PIN MODE
 
   DMX_begin();
 }
@@ -39,7 +38,7 @@ void loop() {
 
     for (byte i = 0; i < 8; i++)
     {
-      buffer_dmx[i][1] = dim;  ////  OUT1-8, CHANNEL 1 /// SYNTAX:  buffer_dmx[OUT(0-7)][CHANNEL(1-512)]
+      buffer_dmx[i][1] = dim;  ////  SYNTAX: buffer_dmx[OUT(0-7)][CHANNEL(1-512)]
     }
 
     dim++;
