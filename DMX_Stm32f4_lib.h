@@ -9,20 +9,20 @@
 */
 
 
-uint16_t dma_buffer[6000];
-uint8_t buffer_dmx[8][513];
+uint16_t dma_buffer[6000]; //// 6000 * 4 uS = 24 mS. 1000/24 = 41 packet/Sec.
+uint8_t buffer_dmx[8][513]; /// [UNIVERSE][CHANNEL]  !! 1 DMX ADRESS = 1 CHANNEL, CHANNEL 0 ALWAYS ZERO,ITS ZERO BYTE BEFORE DATA BYTES
 uint32_t timerTick = 0;
 uint8_t dma_bitcount;
 uint16_t dma_bytecount;
 
-byte OUT1 = -1;
-byte OUT2 = -1;
-byte OUT3 = -1;
-byte OUT4 = -1;
-byte OUT5 = -1;
-byte OUT6 = -1;
-byte OUT7 = -1;
-byte OUT8 = -1;
+int8_t OUT1 = -1;
+int8_t OUT2 = -1;
+int8_t OUT3 = -1;
+int8_t OUT4 = -1;
+int8_t OUT5 = -1;
+int8_t OUT6 = -1;
+int8_t OUT7 = -1;
+int8_t OUT8 = -1;
 
 #define OUTPORT GPIOС // output port GPIOA, GPIOB, GPOC ....
 
