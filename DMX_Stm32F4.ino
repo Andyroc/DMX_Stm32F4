@@ -7,8 +7,6 @@ Fade in channel 1 on all outputs.
 
 #include "DMX_Stm32f4_lib.h"
 
-
-
 long Timer = 0;
 byte dim = 0;
 
