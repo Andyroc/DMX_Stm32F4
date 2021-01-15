@@ -3,6 +3,8 @@
 Fade in channel 1 on all outputs.
 */
 
+/// pin name/port example - PB_4 == port GPIOB, pin 4
+
 #define OUTPORT GPIOC // output port GPIOA, GPIOB, GPOC ....
 
 #include "DMX_Stm32f4_lib.h"
