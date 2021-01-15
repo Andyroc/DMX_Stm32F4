@@ -5,6 +5,8 @@ Fade in channel 1 on all outputs.
 
 #include "DMX_Stm32f4_lib.h"
 
+#define OUTPORT GPIOС // output port GPIOA, GPIOB, GPOC ....
+
 long Timer = 0;
 byte dim = 0;
 
