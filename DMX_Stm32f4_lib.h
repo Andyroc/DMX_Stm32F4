@@ -31,7 +31,7 @@ void DMX_begin()
     RCC->AHB1ENR |= 1 << 22; 
     RCC->APB2ENR |= 1; 
     TIM1->DIER = (1 << 8); 
-    TIM1->PSC = 336; 
+    TIM1->PSC = 335; 
     TIM1->ARR = 1; 
     TIM1->CR1 = 1; 
     DMA2_Stream5->CR = (6 << 25) | (1 << 11) | (1 << 10) | (1 << 8) | (1 << 6); // Ch:6,WORD,MINC,CIRC,Mem2per
